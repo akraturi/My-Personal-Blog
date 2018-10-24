@@ -1,0 +1,46 @@
+{% extends "app/base.html" %}
+{% block content %}
+<div class="posts container" style="width:500px;">
+
+
+<div class="" style="left:70%" >
+
+
+{% for post in post_list %}
+<div class="post" >
+ <h1>
+   <a href="{% url 'post_detail' pk=post.pk %}">{{post.title}}</a>
+ </h1>
+ <div class="date">
+   <p>Published on:{{post.published_date|date:"D M Y"}}</p>
+</div>
+<a href="{% url 'post_detail' pk=post.pk %}">Comments:{{post.approve_comments.count}}</a>
+
+</div>
+
+<hr>
+{% endfor %}
+</div>
+</div>
+{% endblock  %}
+
+{% block welcome_block %}
+
+<div class="card" style="">
+  <div class="card-body">
+    <h2 class="card-title" style="text-align:center;">Welcome</h2>
+    <hr>
+    <p style="text-align:center;"class="card-text">Hi there, welcome to
+      <strong>Code-Today</strong>
+      ,we talk about all the tech stuff,software development and programming here.<br> Happy Learning :)</p>
+    <blockquote class="blockquote-reverse" cite="">
+      <strong>“Learning and innovation go hand in hand. The arrogance of success is to think that what you did yesterday will be sufficient for tomorrow.”
+-William Pollard</strong>    </blockquote>
+    <a href="{% url 'about' %}" class="btn btn-primary">Who am I?</a>
+  </div>
+  <img style=" " class="card-img-bottom" src="https://legaldesk.com/wp-content/uploads/2016/02/Software-Development-Contract.jpg" alt="Amit K Raturi">
+
+</div>
+
+
+{% endblock %}

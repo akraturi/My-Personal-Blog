@@ -1,0 +1,121 @@
+{% extends "app/base.html" %}
+{% block content %}
+<div class="posts container">
+
+
+<div class="centerstage">
+
+<!---
+{# {% for post in post_list %}
+<div class="post">
+ <h1>
+   <a href="{% url 'post_detail' pk=post.pk %}">{{post.title}}</a>
+ </h1>
+ <div class="date">
+   <p>Published on:{{post.published_date|date:"D M Y"}}</p>
+</div>
+<a href="{% url 'post_detail' pk=post.pk %}">Comments:{{post.approve_comments.count}}</a>
+
+</div>
+
+<hr>
+{% endfor %} #} --->
+
+<div class="card container" style="padding-top:70px">
+    <div class="box">
+        <div class="img">
+            <img src="https://lh3.googleusercontent.com/-7vAalaTKGUY/WzXHICPUPtI/AAAAAAAACys/2s9ac6swwo4EKI4eCJTvfs2mqh9SMk9sACEwYBhgL/w140-h140-p/IMG_20180326_152734.jpg">
+        </div>
+        <h2>Amit Kishor Raturi<br><span>Android Developer</span> <span>Web Developer</span>
+        <br><span>Competitive Programmer</span></h2>
+        <div class="container" style="width:400px">
+          <p> Hi, I have expeerience with the development of SaaS based android apps.I am currently a student at NIT Uttarakhand.
+            <br>
+            <a href="https://drive.google.com/open?id=1xoxnIDJL6Ywo8Zvo8rpCabuWwKIhkaND">Check out my resume to know more</a>
+          </p>
+        </div>
+        <!-- <embed src="https://doc-0s-7g-docs.googleusercontent.com/docs/securesc/n8hkss0t3mrup9fass8umg784c1thokj/8evo0in897m27r4nna6bbmr3vt5bavlm/1540296000000/17484138159605082199/10771477850166110538/1xoxnIDJL6Ywo8Zvo8rpCabuWwKIhkaND?e=download/cv_akraturi.pdf" width="800px" height="2100px" /> -->
+
+        <!-- <a href="https://drive.google.com/open?id=1xoxnIDJL6Ywo8Zvo8rpCabuWwKIhkaND">My Resume</a> -->
+         {# <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>  #}
+
+
+
+
+         <hr>
+        <span>
+            <ul>
+               <li><a href="https://www.github.com/akraturi"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+               <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.facebook.com/akraturi53"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+              </ul>
+        </span>
+    </div>
+</div>
+
+
+</div>
+</div>
+{% endblock  %}
+
+
+{% block welcome_block %}
+<div class="jumbotron container">
+  <section class="tout" id="interests">
+    <div class="container">
+      <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Interests</h2>
+                <hr />
+            </div>
+        </div>
+            <div class="row">
+                <div class="col-sm-6">
+        <p>
+          My personal interests include:
+        </p>
+      <ul>
+        <li>
+         <b>Software Development</b>. I am really enthusiastic about developing softwares those could effect our day to day life. I have got a good hands over developing android apps and still there is a lot to learn.I'm working through several online classes to enchance my software development skills by learning new frameworks like DJANGO for web apps development and many more.
+        </li>
+        <li>
+         <b>Deep learning</b>. It's an exciting time for machine learning. I am determined to develop softwares in conjuction to deep learning models which could turn softwares into living bots.
+        </li>
+
+        <li>
+          <b>Poetry(Hindi) and novels</b>. I've been an enthusiastic hobbiest since I was a teenager - but  as an adult only some hobbies like these could lead to
+          the peace of mind.
+        </li>
+      </ul>
+    </div>
+    <div class="col-sm-6">
+      <h3 style="margin-top:0">Recent Projects</h3>
+      <ul>
+        <li>
+        HeavensFood is an android app to change the way tiffin services work in the countries like India. It was developed for a local business in dehradun. Users choose their own meal using a notification and meals are delievered to the users as per their choices. The app is lessed with PayUMoney payment gateway.
+        for more details and code visit <a href="https://www.github.com/AndroidBoys/FoodHeaven">HeavensFood(github)</a>
+        </li>
+        <li>
+          TopNotes is an android app using which the students and faculty can exchange study material such as Notes, Ebooks.
+          visit github for more details <a href="https://www.github.com/AndroidBoys/TopNotes">TopNotes(github)</a>
+        </li>
+          </ul>
+          <h3>Other Things</h3>
+          <ul>
+        <li>
+           I like competitive programming.I am active in online competitions at
+           <a href="https://www.hackerearth.com/@akraturi"> Hackerearth</a>
+        </li>
+        <li>
+          I have been grown up teaching others,so now i am addicted to it. :D
+          I like sharing my knowledge and learning from others.
+        </li>
+       </ul>
+      </div>
+    </div>
+  </div>
+  </section>
+</div>
+{% endblock %}
